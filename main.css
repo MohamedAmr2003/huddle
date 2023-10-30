@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --pri-pink:hsl(322, 100%, 66%);
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --fs:18px;
+    --fw-h:600;
+--font-family-headding: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.flex{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+}
+
+.page .container header {
+    background-image: url(images/bg-hero-desktop.svg);
+    background-size: cover;
+    height: 70vh;
+    z-index: -1;
+    padding-top: 15px;
+}
+
+
+
+.page .container header .top{
+    margin: 0 40px;
+}
+
+.page .container header .top img{
+    height: 40px;
+}
+
+.page .container header .top ul li{
+    background-color: white;
+    box-shadow: -1px 8px 8px 2px #333;
+    width: 150px;
+    height: 30px;
+    line-height: 1.7;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.page .top a{
+    color: var(--Very-Dark-Cyan);
+    text-transform: capitalize;
+}
+
+.page .container header .body{
+margin-top: 30px;
+}
+
+.text{
+margin-left: 30px;
+}
+
+.text h2{
+font-family: var(--font-family-headding);
+text-transform: capitalize;
+color: var(--Very-Dark-Cyan);
+margin-bottom: 10px;
+}
+
+ .text p{
+font-size: var(--fs);
+line-height: 1.5;
+margin-bottom: 30px;
+color: var(--Grayish-Blue);
+}
+
+button{
+height: 40px;
+width: 200px;
+background-color: var(--pri-pink);
+color: var(--Very-Pale-Cyan);
+border: none;
+border-radius: 10px;
+text-transform: capitalize;
+cursor: pointer;
+}
+
+.image{
+    margin-right: 30px;
+    margin-bottom: 40px;
+}
+.page .container header .body img{
+    height: 400px;
+}
+
+.page section {
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+.page section .box{
+    box-shadow: -1px 8px 8px 2px #ddd;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px;
+    border-radius: 7px;
+}
+.page section img{
+height: 400px;
+}
+
+.ml{
+    margin-left: 30px;
+}
+
+.mr{
+    margin-right: 30px;
+}
+
+.card{
+    margin-top: 100px;
+    box-shadow: -1px 8px 0px -24px #ddd;
+    text-align: center;
+    width: 500px;
+    height: 130px;
+    position: absolute;
+    left: 35%;
+    background-color: white;
+    bottom: -203%;
+    border-radius: 10px;
+}
+
+.card h2{
+color: var(--Very-Dark-Cyan);
+text-transform: capitalize;
+margin-top: 20px;
+}
+
+.card button{
+    margin-top: 20px;
+}
+
+footer{
+    height: 50vh;
+    background-color: var(--Very-Dark-Cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+
+footer .col{
+    margin-left: 40px;
+    color: var(--Very-Pale-Cyan);
+}
+footer .col div{
+    margin-bottom: 30px;
+
+}
+
+
+footer .col a{
+    margin-left: 20px;
+    color: var(--Very-Pale-Cyan);
+    transition: 0.5s;
+}
+
+footer .col a:hover{
+color: wheat;
+}
+
+
+@media (max-width:700px) {
+   
+.top{
+    width: 675px;
+}   
+   
+    .box{
+     flex-direction: column;
+    }
+    .foot{
+        width: 750px;
+    }
+    
+ }
+
+@media (max-width:700px) {
+    .sec{
+width: 750px;
+padding-top: 140px;
+text-align: center;
+    }
+
+    .body{
+        width: 700px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card{
+        bottom: -2403px;
+    }
+
+}
